@@ -50,4 +50,7 @@ func main() {
 	fmt.Printf("Total anotherSliceNumbers %v \n", len(anotherSliceNumbers)) // 3
 	fmt.Printf("Total anotherSliceNumbers %v \n", cap(anotherSliceNumbers)) // 3
 
+	anotherNewSliceNumbers := append(anotherSliceNumbers[1:], []int{20, 25, 30}...)
+	// [10 15 20 25 30] // remove 5
+	fmt.Printf("Total anotherNewSliceNumbers %v \n", anotherNewSliceNumbers)
 }
