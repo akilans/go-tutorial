@@ -16,7 +16,15 @@ func main() {
 
 	// Key exists check
 	if val, ok := akilanDetails[keyName]; ok {
+		fmt.Println(ok)
 		fmt.Println("Key " + keyName + " Exists. & the value is " + val)
+	}
+
+	if val, isExists := akilanDetails["age"]; isExists {
+		fmt.Println(val)
+		fmt.Println(isExists)
+	} else {
+		fmt.Println(isExists)
 	}
 
 	if mark < 0 || mark > 100 {

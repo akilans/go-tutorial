@@ -9,6 +9,12 @@ type Friends struct {
 	locations []string
 }
 
+type Employee struct {
+	name      string
+	age       int
+	locations []string
+}
+
 // Map example => Key and value pair
 var akilanDetails = map[string]string{
 	"name":     "Akilan",
@@ -37,7 +43,20 @@ func main() {
 		},
 	}
 
+	akilan := Employee{
+		name: "Akilan",
+		age:  34,
+		locations: []string{
+			"Bangalore",
+			"London",
+		},
+	}
+
 	fmt.Printf("Alex's Details %v\n", alex)
 	fmt.Printf("Alex's locations %v\n", alex.locations)
+
+	fmt.Printf("Akilan's Details %v\n", akilan)
+	fmt.Printf("Akilan's Age is %v\n", akilan.age)
+	fmt.Printf("Akilan's locations %v\n", akilan.locations)
 
 }

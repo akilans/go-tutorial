@@ -11,6 +11,11 @@ var letterMatrix [3][3]string = [3][3]string{
 	[3]string{"G", "H", "I"},
 }
 
+var anotherLetterMatrix [2][3]string = [2][3]string{
+	[3]string{"A", "B", "C"},
+	[3]string{"D", "E", "F"},
+}
+
 var copiedFriends = friends // Exact copy, Change here does no impact in friends
 var refFriends = &friends   //Pointer, Change here does impact in friends
 
@@ -27,6 +32,9 @@ func main() {
 	fmt.Printf("Numbers list %v, %T \n", numbers, numbers)
 	//Letter matrix [[A B C] [D E F] [G H I]], [3][3]string
 	fmt.Printf("Letter matrix %v, %T \n", letterMatrix, letterMatrix)
+	// Another Letter matrix [[A B C] [D E F]], [2][3]string
+	fmt.Printf("Another Letter matrix %v, %T \n", anotherLetterMatrix, anotherLetterMatrix)
+
 	// Letter matrix[1][1] E, string
 	fmt.Printf("Letter matrix[1][1] %v, %T \n", letterMatrix[1][1], letterMatrix[1][1])
 	fmt.Printf("Friends list %v, %T \n", copiedFriends, copiedFriends)

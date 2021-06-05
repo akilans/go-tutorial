@@ -40,7 +40,8 @@ func main() {
 	fmt.Printf("Third index of my name is %v\n", string(myName[index2]))
 	fmt.Printf("Fourth index of my name is %v\n", string(myName[index3]))
 
-	fmt.Printf("%v , %T\n", KB, KB) // 1024
+	fmt.Printf("%v MB , %T %v\n", MB, MB, MB/KB)
+	fmt.Printf("%v GB , %T %v\n", GB, GB, GB/MB)
 
 	fileSize := 40000000000.00
 	fmt.Printf("%.2fGB\n", fileSize/GB) // 37.25GB
